@@ -5,36 +5,36 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5389249317:AAFE3ddgh_CqddTKWOFS_Ed2miMccLQuSWc")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6814641933:AAFylTrMoGw4l7QRGv_8Qe2027ctL5zBYmM")
 
-APP_ID = int(os.environ.get("APP_ID", "10053188"))
+APP_ID = int(os.environ.get("APP_ID", "15503725"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "74689cc3a42a7afc507453c94a0cfeb9")
+API_HASH = os.environ.get("API_HASH", "d11e4a03659488e40429f3c39431b6db")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001240395351"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002225719459"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "767386502"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "1398885416"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
 #Database
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://filestore:filestore@filestore.csfmplj.mongodb.net/?retryWrites=true&w=majority&appName=filestore")
-DB_NAME = os.environ.get("DATABASE_NAME", "filestore")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://animebot:animebot@cluster0.guhiqsz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #Shortner (token system) 
 
-SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "")
-SHORTLINK_API = os.environ.get("SHORTLINK_API", "")
+SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "kingurl.in")
+SHORTLINK_API = os.environ.get("SHORTLINK_API", "cbe14c146daa6050159c04fe4068bf73c0519990")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 IS_VERIFY = os.environ.get("IS_VERIFY", "True")
 TUT_VID = os.environ.get("TUT_VID","https://t.me/How_to_Download_7x/32")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001225188740"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002237299255"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -42,7 +42,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "<b>ʜᴇʟʟᴏ {first}\n\n ɪ ᴀᴍ ᴛᴏᴋᴇɴ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ , ɪ ᴄᴀɴ sᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ғɪʟᴇs ɪɴ sᴘᴇᴄɪғɪᴇᴅ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜsᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ɪᴛ ғʀᴏᴍ sᴘᴇᴄɪᴀʟ ʟɪɴᴋ » @team_netflix</b>")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "6852649461").split()):
+    for x in (os.environ.get("ADMINS", "1398885416").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
